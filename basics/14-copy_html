@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in *.sh; do if [ -f "$file" ]; then if [ ! -e "../$file" ]; then cp "$file" "../"; fi; if [ "$file" -nt "../$file" ]; then cp "$file" "../"; fi; fi; done
+cp -u *.html ..
